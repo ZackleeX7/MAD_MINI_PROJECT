@@ -1,21 +1,9 @@
 import { Ionicons } from "@expo/vector-icons";
-<<<<<<< HEAD
 import { FlatList, Image, StyleSheet, Text, View } from "react-native";
-=======
-<<<<<<< HEAD
-import { FlatList, Image, StyleSheet, Text, View } from "react-native";
-=======
-import { Text, View } from "react-native";
->>>>>>> 0146db0a64dbb2a2aeebf7a09f3111a740a7534e
->>>>>>> edb5d192dca5ac84335b124c030cac97e133830e
 
 import { Colors } from "@/constants/theme";
 import { useColorScheme } from "@/hooks/use-color-scheme";
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> edb5d192dca5ac84335b124c030cac97e133830e
 const recommendedBooks = [
   {
     id: "1",
@@ -50,19 +38,10 @@ type Book = {
   cover: string;
 };
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 0146db0a64dbb2a2aeebf7a09f3111a740a7534e
->>>>>>> edb5d192dca5ac84335b124c030cac97e133830e
 export default function HomeScreen() {
   const colorScheme = useColorScheme();
   const colors = Colors[colorScheme ?? "light"];
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> edb5d192dca5ac84335b124c030cac97e133830e
 const renderBookItem = ({ item }: { item: Book }) => (
   <View style={styles.bookCard}>
     
@@ -184,32 +163,3 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
 });
-<<<<<<< HEAD
-=======
-=======
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        padding: 24,
-      }}
-    >
-      <Ionicons
-        name="home-outline"
-        size={72}
-        color={colors.tint}
-        style={{ marginBottom: 16 }}
-      />
-      <Text style={{ fontSize: 20, fontWeight: "600", marginBottom: 8 }}>
-        Library Promotion
-      </Text>
-      <Text style={{ fontSize: 16, color: colors.text }}>
-        Recommended Books
-      </Text>
-    </View>
-  );
-}
->>>>>>> 0146db0a64dbb2a2aeebf7a09f3111a740a7534e
->>>>>>> edb5d192dca5ac84335b124c030cac97e133830e

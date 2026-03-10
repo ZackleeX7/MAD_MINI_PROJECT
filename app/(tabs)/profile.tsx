@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 import { Text, View, StyleSheet, TouchableOpacity, Switch } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useState } from "react";
-=======
-import { Text, View } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
->>>>>>> edb5d192dca5ac84335b124c030cac97e133830e
 
 import { useColorScheme } from "@/hooks/use-color-scheme";
 import { Colors } from "@/constants/theme";
@@ -14,7 +9,6 @@ export default function ProfileScreen() {
   const colorScheme = useColorScheme();
   const colors = Colors[colorScheme ?? "light"];
 
-<<<<<<< HEAD
   const [darkMode, setDarkMode] = useState(false);
   const [notifications, setNotifications] = useState(true);
 
@@ -117,20 +111,3 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
 });
-=======
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center", padding: 24 }}>
-      <Ionicons
-        name="person-circle-outline"
-        size={72}
-        color={colors.tint}
-        style={{ marginBottom: 16 }}
-      />
-      <Text style={{ fontSize: 20, fontWeight: "600", marginBottom: 8 }}>User Profile</Text>
-      <Text style={{ fontSize: 16, color: colors.text }}>
-        Manage your account and preferences
-      </Text>
-    </View>
-  );
-}
->>>>>>> edb5d192dca5ac84335b124c030cac97e133830e
